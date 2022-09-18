@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARSEN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/animate.css">
+</head>
+<header>
+  <div class="itemsHeaders margenHeader margenDesktopUno">
+    <img src="./assets/Pin.png" class="logosHeader" alt="icono de ubicacion">
+    <p>Rafael Torreblanca 332, Copiapó, Chile</p>
+  </div>
+  <div class="itemsHeaders ">
+    <img src="./assets/Correo.png" class="logosHeader" alt="icono de correo">
+    <p>contacto@arsen.cl</p>
+  </div>
+  <div class="itemsHeaders margenDesktopDos">
+    <img src="./assets/Reloj.png" class="logosHeader" alt="icono de Reloj">
+    <p>Lunes a Viernes 09:00-18:00</p>
+  </div>
+</header>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light  navbar-text mb-0">
+    <div class="container-fluid  p-0 ">
+      <a class="navbar-brand margenMediaQuery" href="./index.html"><img src="./assets/logoarsenpx.png"
+          alt="logo de la empresa arsen"></a>
+      <button class="hamburger hamburger--slider d-ms-block d-md-none d-lg-none d-xl-none d-xxl-none text-center "
+        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box ">
+          <span class="hamburger-inner "></span>
+        </span>
+      </button>
+      <!-- elementos del menu colapsable -->
+      <div class="collapse navbar-collapse  text-center margenMediaQueryEle" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mt-2 mb-lg-0 ">
+          <li class="nav-item d-md-none">
+            <a class="nav-link margenItemNav" id="colorTextoNav" href="./index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link margenItemNav displayNoneItemsNav" id="colorTextoNav" href="#nosotrosMobile">NOSOTROS</a>
+            <a class="nav-link margenItemNav displayNoneItemsTabNos " id="colorTextoNav"
+              href="#nosotrosTab">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link margenItemNav displayNoneItemsNav" id="colorTextoNav"
+              href="#serviciosMobile">SERVICIOS</a>
+            <a class="nav-link margenItemNav displayNoneItemsTab" id="colorTextoNav"
+              href="#serviciosTablet">SERVICIOS</a>
+            <a class="nav-link margenItemNav displayNoneItemsDesk" id="colorTextoNav"
+              href="#serviciosDesk">SERVICIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link margenItemNav" id="colorTextoNav" href="#proyectosMobile">PROYECTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link margenItemNav" id="colorTextoNav" href="#contactoMobile">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="backgroundHeader">
+      <div class="wow fadeIn "data-wow-duration="2s">
+        <h2 class="textos wow ">EXPERTOS EN</h2>
+        <h1 class="tituloHead wow ">HIDROMETALURGIA</h1>
+      </div>
+      <div class="contendorBotones1 wow fadeIn" data-wow-duration="2s">
+        <button class="botonn uno"><span>Contáctanos</span></button>
+      </div>
+    </div>
+    <!-- BLOQUE 1 -->
+    <div class="backgroundBloque1">
+      <p>
+        Más de 30 años de experiencia en el ámbito de plantas
+        hidrometalúrgicas
+      </p>
+    </div>
+    <!-- BLOQUE 2 mobile-->
+    <div class="backgroudnBloque2 displayNone ">
+      <div id="nosotrosMobile"></div>
+      <div>
+        <h3>NOSOTROS</h3>
+      </div>
+      <div class="imagenNosotros"></div>
+      <div class="descripcionUno">
+        <p class="colorTextoUno">
+          Desarrollamos y construimos soluciones en el
+          <span class="colorTextoDos"> mundo de la Hidrometalurgia</span>
+        </p>
+      </div>
+      <div class="descripcionDos">
+        <p>
+          Somos una empresa focalizada en el diseño y administración de
+          construcción de plantas hidrometalurgicas, especialmente en plantas
+          de aglomerado, lixiviación, extracción por solventes y
+          electroobtención.
+        </p>
+      </div>
+    </div>
+    <!-- BLOQUE 2 TABLET -->
+    <div id="nosotrosTab"></div>
+    <div class="bloqueDosTablet ">
+      <div class="imagenBloqueDosTablet"></div>
+      <div class="bloqueDosTextos">
+        <div class="nosotrosTablet">
+          <h2>NOSOTROS</h2>
+        </div>
+        <div class="descripcionTablet">
+          <h2>Desarrollamos y construimos soluciones en el <span class="colorTextoDos"> mundo de la
+              Hidrometalurgia</span></h2>
+          <p>Somos una empresa focalizada en el diseño y la administración de construccion de plantas hidrometalurgicas,
+            especialmente en plantas de aglomerado, lixiviación, extracción por solventes y electroobtención</p>
+        </div>
+        <div class="viñetasTablet">
+          <div class="iconoViñeta"><img src="./assets/Tick.png" alt="icono de viñeta">
+            <p class="colorTurquesa">Desarrollos de plantas</p>
+          </div>
+          <div class="iconoViñeta"><img src="./assets/Tick.png" alt="icono de viñeta">
+            <p>Construcción y montaje de plantas</p>
+          </div>
+          <div class="iconoViñeta"><img src="./assets/Tick.png" alt="icono de viñeta">
+            <p>Operación</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN BLOQUE 2 -->
+    <!-- BLOQUE 3 -->
+    <div class="backgroudnBloque3 displayNoneBloqueTres ">
+      <div id="serviciosMobile"></div>
+      <div class="tituloServicios">
+        <h2>SERVICIOS</h2>
+      </div>
+      <div class="flexDesktopServicios">
+        <div class="imgServ">
+          <div class="miniaturaServicios"></div>
+          <div class="descripcionServicios">
+            <div class="assetPosicion">
+              <img src="./assets/Desarrollo.png" alt="imagen que describe el desarollo de plantas" />
+            </div>
+            <div>
+              <h2>DESARROLLO DE PLANTAS</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sodales varius erat non finibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="imgServ">
+          <div class="miniaturaServicios"></div>
+          <div class="descripcionServicios">
+            <div class="assetPosicion">
+              <img src="./assets/Operacion.png" alt="imagen que describe el desarollo de plantas" />
+            </div>
+            <div>
+              <h2>CONSTRUCCIÓN Y MONTAJE</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sodales varius erat non finibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="imgServ">
+          <div class="miniaturaServicios"></div>
+          <div class="descripcionServicios">
+            <div class="assetPosicion">
+              <img src="./assets//Construccion.png" alt="imagen que describe el desarollo de plantas" />
+            </div>
+            <div>
+              <h2>OPERACIÓN</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sodales varius erat non finibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imagenWorker">
+        <img src="./assets/Worker.png" alt="imagen de un trabajador" />
+      </div>
+      <div class="parrafoWorker">
+        <p>
+          Contamos con un
+          <span class="spanTextoWorker">staff de profesionales de diversas disciplinas</span>, orientadas a la
+          especialidad de diseño e ingeniería,
+          especialmente en las áreas de procesos, civil, mecánica, hidráulica
+          y eléctrica.
+        </p>
+      </div>
+    </div>
+    <!-- FIN BLOQUE 3 -->
+    <!-- INICIO BLOQUE 3 TABLET -->
+    <div class="backgroudnBloque3" id="displayNo">
+      <div id="serviciosTablet"></div>
+      <div class="tituloServicios">
+        <h2>SERVICIOS</h2>
+      </div>
+      <div class="imgServ">
+        <div class="miniaturaServicios"></div>
+        <div class="descripcionServicios">
+          <div class="assetPosicion">
+            <img src="./assets/Desarrollo.png" alt="imagen que describe el desarollo de plantas" />
+          </div>
+          <div class="tamañoDesarolloPlantas">
+            <h2>DESARROLLO DE PLANTAS</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum sodales varius erat non finibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="imgServ">
+        <div class="miniaturaServicios"></div>
+        <div class="descripcionServicios">
+          <div class="assetPosicion">
+            <img src="./assets/Operacion.png" alt="imagen que describe el desarollo de plantas" />
+          </div>
+          <div class="tamañoDesarolloPlantas">
+            <h2>CONSTRUCCIÓN Y MONTAJE</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum sodales varius erat non finibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="imgServ">
+        <div class="miniaturaServicios"></div>
+        <div class="descripcionServicios">
+          <div class="assetPosicion">
+            <img src="./assets//Construccion.png" alt="imagen que describe el desarollo de plantas" />
+          </div>
+          <div class="tamañoDesarolloPlantas">
+            <h2>OPERACIÓN</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum sodales varius erat non finibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="imagenWorker">
+        <img src="./assets/Worker.png" alt="imagen de un trabajador" />
+      </div>
+      <div class="parrafoWorker">
+        <p>
+          Contamos con un
+          <span class="spanTextoWorker">staff de profesionales de diversas disciplinas</span>, orientadas a la
+          especialidad de diseño e ingeniería,
+          especialmente en las áreas de procesos, civil, mecánica, hidráulica
+          y eléctrica.
+        </p>
+      </div>
+    </div>
+    <!-- DESTOOOOOOOOOOOOOOOOOOOOKP SERVICIOSSS -->
+    <div class="backgroudnBloqueDeskServ displayNoneServiDesktop  " id="servicios1" id="serviciosDesk">
+      <div id="serviciosDesk"></div>
+      <div class="tituloServicios">
+        <h2>SERVICIOS</h2>
+      </div>
+
+      <div class="flexDesktopServicios">
+        <div class="imgServ">
+          <div class="miniaturaServicios"></div>
+          <div class="descripcionServicios">
+            <div class="assetPosicion">
+              <img src="./assets/Desarrollo.png" alt="imagen que describe el desarollo de plantas" />
+            </div>
+            <div>
+              <h2>DESARROLLO DE PLANTAS</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sodales varius erat non finibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="imgServ">
+          <div class="miniaturaServicios"></div>
+          <div class="descripcionServicios">
+            <div class="assetPosicion">
+              <img src="./assets/Operacion.png" alt="imagen que describe el desarollo de plantas" />
+            </div>
+            <div>
+              <h2>CONSTRUCCIÓN Y MONTAJE</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sodales varius erat non finibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="imgServ">
+          <div class="miniaturaServicios"></div>
+          <div class="descripcionServicios">
+            <div class="assetPosicion">
+              <img src="./assets//Construccion.png" alt="imagen que describe el desarollo de plantas" />
+            </div>
+            <div>
+              <h2>OPERACIÓN</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sodales varius erat non finibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imagenWorker">
+        <img src="./assets/Worker.png" alt="imagen de un trabajador" />
+      </div>
+      <div class="parrafoWorker">
+        <p>
+          Contamos con un
+          <span class="spanTextoWorker">staff de profesionales de diversas disciplinas</span>, orientadas a la
+          especialidad de diseño e ingeniería,
+          especialmente en las áreas de procesos, civil, mecánica, hidráulica
+          y eléctrica.
+        </p>
+      </div>
+    </div>
+    <!-- INICIO BLOQUE PROYECTOS -->
+    <div class="bloqueProyectos">
+      <div id="proyectosMobile"></div>
+      <div class="tituloProyectos">
+        <h2>PROYECTOS <span class="displayMediaQuery"> DESTACADOS</span></h2>
+      </div>
+      <!-- TABLET -->
+      <!-- CARROUSELL TABLET -->
+      <div id="carouselExampleControls" class="carousel carousel-dark slide d-none d-md-block anchoCarrouselTotal"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators marginIndicator d-lg-none">
+          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner  ">
+          <div class="carousel-item active">
+            <div class="bloqueDosTablet margenBloqueProyectos">
+              <div class="imagenBloqueProyectoTablet"></div>
+              <div class="bloqueDosTextos">
+                <div class="proyectosTablet">
+                  <h2 class="atacamaChile">ATACAMA-CHILE</h2>
+                </div>
+                <div class="descripcionTablet descripcionProyectosTablet">
+                  <h2>CIA. Minera Carmen Bajo- <span class="colorTextoDos"> Proyecto Las Pintadas</span></h2>
+                  <p id="parrafoProyectoTablet"><span> Ingeniería Básica y detalles de planta de Aglomerado</span> -
+                    Lixiviación en Pilas -
+                    Precipitación con capacidad para tratar 20.000 ton/mes de minerales oxidados.
+                    En una segunda fases se realizará la expansión al tratamiento de 40,000 ton/mes de minerales, con
+                    conversión de las etapas de precipitación en planta
+                    SX/EW para alcanzar un producción de 400 ton/mes de cátodos Electro-Obtenidos.</p>
+                </div>
+                <div class="boxInferioresProyecto">
+                  <div class="boxInfUno">
+                    <p>OPERACIÓN DE PLANTAS</p>
+                  </div>
+                  <div class="boxInfDos">
+                    <p> CONSTRUCCIÓN </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="bloqueDosTablet margenBloqueProyectos">
+              <div class="imagenBloqueProyectoTablet"></div>
+              <div class="bloqueDosTextos">
+                <div class="proyectosTablet">
+                  <h2 class="atacamaChile">ATACAMA-CHILE</h2>
+                </div>
+                <div class="descripcionTablet descripcionProyectosTablet">
+                  <h2>CIA. Minera Carmen Bajo- <span class="colorTextoDos"> Proyecto Las Pintadas</span></h2>
+                  <p id="parrafoProyectoTablet"><span> Ingeniería Básica y detalles de planta de Aglomerado</span> -
+                    Lixiviación en Pilas -
+                    Precipitación con capacidad para tratar 20.000 ton/mes de minerales oxidados.
+                    En una segunda fases se realizará la expansión al tratamiento de 40,000 ton/mes de minerales, con
+                    conversión de las etapas de precipitación en planta
+                    SX/EW para alcanzar un producción de 400 ton/mes de cátodos Electro-Obtenidos.</p>
+                </div>
+                <div class="boxInferioresProyecto">
+                  <div class="boxInfUno">
+                    <p>OPERACIÓN DE PLANTAS</p>
+                  </div>
+                  <div class="boxInfDos">
+                    <p> CONSTRUCCIÓN </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="bloqueDosTablet margenBloqueProyectos">
+              <div class="imagenBloqueProyectoTablet"></div>
+              <div class="bloqueDosTextos">
+                <div class="proyectosTablet">
+                  <h2 class="atacamaChile">ATACAMA-CHILE</h2>
+                </div>
+                <div class="descripcionTablet descripcionProyectosTablet">
+                  <h2>CIA. Minera Carmen Bajo- <span class="colorTextoDos"> Proyecto Las Pintadas</span></h2>
+                  <p id="parrafoProyectoTablet"><span> Ingeniería Básica y detalles de planta de Aglomerado</span> -
+                    Lixiviación en Pilas -
+                    Precipitación con capacidad para tratar 20.000 ton/mes de minerales oxidados.
+                    En una segunda fases se realizará la expansión al tratamiento de 40,000 ton/mes de minerales, con
+                    conversión de las etapas de precipitación en planta
+                    SX/EW para alcanzar un producción de 400 ton/mes de cátodos Electro-Obtenidos.</p>
+                </div>
+                <div class="boxInferioresProyecto">
+                  <div class="boxInfUno">
+                    <p>OPERACIÓN DE PLANTAS</p>
+                  </div>
+                  <div class="boxInfDos">
+                    <p> CONSTRUCCIÓN </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev d-none d-lg-block " type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-none d-lg-block " type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- FIN CARROUSELL TABLET -->
+      <div class="displayOtrosProyeNone">
+        <h3>
+          OTROS PROYECTOS
+        </h3>
+      </div>
+      <!-- FIN TABLET -->
+      <!-- CARDS-->
+      <div class="container-fluid contenedorProyectos">
+        <div class="row g-4  justify-content-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  maxWidthCard">
+            <div class="card h-100 d-flex align-items-center">
+              <div class="tamanoImgCard">
+                <img src="..." class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Nombre Proyecto</h5>
+                <p class="card-text colorTextoCard">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <div class="boxUbicacion">
+                <img src="./assets/Pin.png" alt="simbolo de ubicacion">
+                <p>Region - Pais</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 maxWidthCard">
+            <div class="card h-100 d-flex align-items-center">
+              <div class="tamanoImgCard">
+                <img src="..." class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Nombre Proyecto</h5>
+                <p class="card-text colorTextoCard">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <div class="boxUbicacion">
+                <img src="./assets/Pin.png" alt="simbolo de ubicacion">
+                <p>Region - Pais</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 maxWidthCard">
+            <div class="card h-100 d-flex align-items-center">
+              <div class="tamanoImgCard">
+                <img src="..." class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title ">Nombre Proyecto</h5>
+                <p class="card-text colorTextoCard">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <div class="boxUbicacion">
+                <img src="./assets/Pin.png" alt="simbolo de ubicacion">
+                <p>Region - Pais</p>
+              </div>
+            </div>
+          </div>
+          <div class=" d-none d-md-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 maxWidthCard">
+            <div class="card h-100 d-flex align-items-center">
+              <div class="tamanoImgCard">
+                <img src="..." class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body pepito">
+                <h5 class="card-title">Nombre Pro</h5>
+                <p class="card-text colorTextoCard">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <div class="boxUbicacion">
+                <img src="./assets/Pin.png" alt="simbolo de ubicacion">
+                <p>Region - Pais</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN CARDS-->
+    <!-- INICIO BLOQUE "ACTIVA PARTICIPACION" -->
+    <div class="bloqueParticipacion">
+      <h2 class="wow fadeIn "data-wow-duration="2s">Activa participación en la industria extractiva del cobre</h2>
+    </div>
+    <!-- FIN BLOQUE ACTIVA -->
+  </main>
+  <!-- Footer -->
+  <footer id="contactoMobile">
+    <div class="footer">
+      <div class="logoArsen">
+        <img src="./assets/logoarsenpx.png" alt="logo de la empresa arsen">
+      </div>
+      <div class="boxDireHorario">
+        <div class="boxDireccionFooter">
+          <img src="./assets/Pin.png" alt="">
+          <p>Rafael Torreblanca 332, Copiapó, Chile</p>
+        </div>
+        <div class="boxHorarioFooter">
+          <img src="./assets/Reloj.png" alt="">
+          <p>Lunes a Viernes 09:00-18:00</p>
+        </div>
+      </div>
+      <div class="contendorBotones2">
+        <button class="botonnDos dos"><span>Contáctanos</span></button>
+      </div>
+      <div class="copyrightArsen">
+        <div>
+          <h2>ARSEN INGENIERIA LTDA</h2>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scripts  bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--scrip burger bottom  -->
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function () {
+      hamburger.classList.toggle("is-active");
+    });
+  </script>
+  <!-- scrip animaciones -->
+  <script src="./Js/wow.min.js">sr</script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>

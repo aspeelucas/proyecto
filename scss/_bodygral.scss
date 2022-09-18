@@ -1,0 +1,1026 @@
+// DISPLAY HEADER
+header {
+  display: none;
+}
+
+// Header
+.backgroundHeader {
+  background-color: $colorTitulos;
+  height: 549px;
+  @include displayFlex(flex, column);
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.textos {
+  @include text(25px, white, 400);
+  font-family: $mainRoboto;
+  line-height: 29px;
+}
+
+.tituloHead {
+  @include text(32px, white, 700);
+  font-family: $mainRoboto;
+  line-height: 38px;
+}
+
+// Primer bloque
+
+.backgroundBloque1 {
+  background-color: $mainColorBlue;
+  height: 164px;
+  @include displayFlex(flex, column);
+  justify-content: center;
+  align-items: center;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @include text(20px, white, 700);
+    font-family: $mainRoboto;
+    line-height: 23px;
+    width: 90%;
+  }
+}
+
+// segundo bloque
+
+.bloqueDosTablet {
+  display: none;
+}
+.backgroudnBloque2 {
+  @include displayFlex(flex, column);
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include text(32px, $mainColorBlue, 700);
+    font-family: $mainRoboto;
+  }
+}
+
+.imagenNosotros {
+  background-color: #abb5be;
+  height: 265px;
+  width: 332px;
+  border-radius: 10px;
+}
+
+.descripcionUno {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+
+  .colorTextoUno {
+    text-align: center;
+    @include text(24px, $colorTitulos, 700);
+    line-height: 110.9%;
+  }
+
+  .colorTextoDos {
+    color: $mainColorBlue;
+  }
+}
+
+.descripcionDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    width: 80%;
+    text-align: center;
+    @include text(1rem, $colorTextos, 400);
+  }
+}
+
+// tercer bloque
+#displayNo {
+  display: none;
+}
+.backgroudnBloqueDeskServ {
+  display: none;
+}
+.flexDesktopServicios {
+  display: flex;
+  flex-direction: column;
+}
+.backgroudnBloque3 {
+  background-color: $mainColorBlue;
+  @include displayFlex(flex, column);
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+
+  .tituloServicios {
+    @include text(32px, white, 700);
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}
+
+.miniaturaServicios {
+  width: 316px;
+  height: 158px;
+  background-color: #abb5be;
+  margin: 8px;
+  border-radius: 15px;
+}
+
+.imgServ {
+  @include displayFlex(flex, column);
+  align-items: center;
+  background-color: white;
+  width: 331px;
+  height: 346px;
+  border-radius: 20px;
+  margin-bottom: 33px;
+
+  img {
+    width: 69.31px;
+    height: 69.31px;
+  }
+}
+
+.descripcionServicios {
+  @include displayFlex(flex, column);
+  align-items: center;
+
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+    @include text(20px, $mainColorBlue, 700);
+    font-family: $mainRoboto;
+  }
+
+  p {
+    margin-top: 15px;
+    margin-left: 11px;
+    margin-right: 11px;
+    text-align: center;
+    @include text(14px, $colorTextos, 400);
+    font-family: $mainPoppins;
+    line-height: 21px;
+  }
+
+  .assetPosicion {
+    margin-top: -45px;
+  }
+}
+
+.imagenWorker {
+  margin-top: 70px;
+
+  img {
+    width: 138px;
+  }
+}
+
+.parrafoWorker {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+
+  p {
+    text-align: center;
+    width: 80%;
+    @include text(16px, white, 400);
+    line-height: 36px;
+  }
+}
+
+.spanTextoWorker {
+  font-weight: 700;
+}
+
+// BLOQUE PROYECTOS
+
+.displayMediaQuery {
+  display: none;
+}
+
+.displayOtrosProyeNone {
+  display: none;
+}
+.bloqueProyectos {
+  @include displayFlex(flex, column);
+}
+
+.tituloProyectos {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    @include text(30px, $mainColorBlue, 700);
+    font-family: $mainRoboto;
+  }
+}
+
+.tamanoImgCard {
+  background-color: #abb5be;
+  width: 100%;
+  height: 187px;
+}
+
+.maxWidthCard {
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorProyectos {
+  margin-top: 34px;
+  width: 100%;
+
+  h5 {
+    @include text(20px, $mainColorBlue, 700);
+  }
+
+  p {
+    @include text(14px, $colorTextos, 400);
+    line-height: 21px;
+  }
+}
+
+.boxUbicacion {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 40px;
+
+  img {
+    margin-left: 20px;
+    width: 15.03px;
+    height: 14.54px;
+  }
+
+  p {
+    font-family: $mainPoppins;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-left: 12.6px;
+    text-align: center;
+    color: $mainColorBlue;
+  }
+}
+// BLOQUE ACTIVA PARTICIPACION
+.bloqueParticipacion {
+  background-color: $colorTitulos;
+  height: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 66px;
+
+  h2 {
+    text-align: center;
+    @include text(20px, white, 700);
+    font-family: $mainRoboto;
+    line-height: 23px;
+    width: fit-content;
+  }
+}
+
+// INICIO BLOQUE FOOTER
+
+.footer {
+  @include displayFlex(flex, column);
+  align-items: center;
+  justify-content: center;
+
+  .boxDireHorario {
+    margin-top: 51px;
+  }
+
+  .logoArsen {
+    margin-top: 50px;
+  }
+
+  .boxDireccionFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    p {
+      margin-top: 17px;
+      @include text(16px, #1e1e1e, 400);
+      font-family: $mainPoppins;
+    }
+
+    img {
+      width: 14.74px;
+      height: 17.44px;
+    }
+  }
+
+  .boxHorarioFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+
+    p {
+      @include text(16px, #1e1e1e, 400);
+      font-family: $mainPoppins;
+    }
+
+    img {
+      margin-top: 1.7px;
+      width: 14.74px;
+      height: 17.44px;
+    }
+  }
+
+  .buttomContactoFooter {
+    margin-top: 50px;
+  }
+
+  .copyrightArsen {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background-color: $colorSupeInf;
+    @include displayFlex(flex, column);
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      @include text(12px, $colorTextos, 700);
+      font-family: $mainPoppins;
+      letter-spacing: 0.225em;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // INICIO HEADER
+  header {
+    background: $colorSupeInf;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    gap: 52px;
+
+    img {
+      width: 14px;
+      height: auto;
+      margin-bottom: 17px;
+      margin-top: 16px;
+    }
+
+    p {
+      @include text(12px, #1e1e1e, 400);
+      font-family: $mainPoppins;
+      line-height: 18px;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .itemsHeaders {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include displayFlex(flex, row);
+      gap: 7px;
+    }
+  }
+
+  // FIN HEADER
+  // INICIO NAVBAR
+  .margenMediaQuery {
+    margin-left: 53px;
+  }
+  .displayNoneItemsNav{
+    display: none;
+}
+.displayNoneItemsTab{
+  display: block;
+}
+.displayNoneItemsDesk{
+  display: none;
+}
+.displayNoneItemsTabNos{
+  display: block;
+}
+  .margenMediaQueryEle {
+    margin-right: 71px;
+    margin-bottom: 25px;
+  }
+
+  // FIN NAV BAR
+  // INICIO BLOQUE HEAD
+
+  .tituloHead {
+    @include text(60px, white, 700);
+    font-family: $mainRoboto;
+    line-height: 70px;
+  }
+
+  // FIN BLOQUE HEAD
+  // INICIO BLOQUE 1
+  .backgroundBloque1 {
+    p {
+      width: 60%;
+      @include text(24px, white, 700);
+      line-height: 28px;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  // FIN BLOQUE 1
+  // INICIO BLOQUE 2 NOSOTROS
+  .displayNone {
+    display: none;
+  }
+
+  .bloqueDosTablet {
+    margin-top: 82px;
+    @include displayFlex(flex, row);
+    align-items: center;
+    justify-content: center;
+
+    .imagenBloqueDosTablet {
+      width: 285px;
+      height: 438px;
+      background: #abb5be;
+      border-radius: 10px;
+    }
+
+    .bloqueDosTextos {
+      margin-left: 20px;
+    }
+
+    .nosotrosTablet {
+      width: 104px;
+      height: 16px;
+
+      h2 {
+        @include text(16px, $mainColorBlue, 700);
+        font-family: $mainRoboto;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+    }
+
+    .descripcionTablet {
+      width: 427px;
+      margin-top: 20px;
+
+      h2 {
+        @include text(30px, #1e1e1e, 700);
+        line-height: 33.27px;
+        font-family: $mainRoboto;
+      }
+
+      .colorTextoDos {
+        color: $mainColorBlue;
+      }
+
+      p {
+        margin-top: 22px;
+        text-align: justify;
+        @include text(16px, $colorTextos, 400);
+        font-family: $mainPoppins;
+      }
+    }
+
+    .viñetasTablet {
+      margin-top: 39px;
+
+      .iconoViñeta {
+        @include displayFlex(flex, row);
+        gap: 10px;
+
+        img {
+          width: 20.83px;
+          height: 20.83px;
+          margin-top: 2.8px;
+        }
+
+        p {
+          font-family: $mainPoppins;
+          @include text(16px, #1e1e1e, 400);
+          text-align: center;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+        }
+
+        .colorTurquesa {
+          color: $secondaryGreen;
+        }
+      }
+    }
+  }
+
+  // BLOQUE 3 SERVICIOS
+  #displayNo {
+    display: flex;
+  }
+  .backgroudnBloqueDeskServ {
+    display: none;
+  }
+  .displayNoneBloqueTres {
+    display: none;
+  }
+  .backgroudnBloque3 {
+    margin-top: 50px;
+    .parrafoWorker {
+      p {
+        font-size: 24px;
+      }
+    }
+
+    .tituloServicios {
+      @include text(40px, white, 700);
+      line-height: 47px;
+      margin-bottom: 62px;
+    }
+
+    .miniaturaServicios {
+      width: 255px;
+      height: 175px;
+      margin: 8px;
+    }
+
+    .imgServ {
+      position: relative;
+      @include displayFlex(flex, row);
+      align-items: center;
+      background-color: white;
+      width: 692px;
+      height: 192px;
+      border-radius: 20px;
+      margin-bottom: 44px;
+
+      img {
+        width: 60px;
+        height: auto;
+      }
+    }
+
+    .descripcionServicios {
+      @include displayFlex(flex, column);
+      align-items: center;
+
+      .tamañoDesarolloPlantas {
+        width: 356px;
+        margin-left: 21px;
+      }
+
+      h2 {
+        text-align: start;
+        @include text(18px, $mainColorBlue, 700);
+        font-family: $mainRoboto;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+      }
+
+      p {
+        margin-top: 32px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 47px;
+        text-align: justify;
+        @include text(16px, $colorTextos, 400);
+        line-height: 24px;
+        letter-spacing: 0.02em;
+      }
+
+      .assetPosicion {
+        left: 103px;
+        bottom: 68px;
+        position: absolute;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  // FIN BLOQUE 3 SERVICIOS
+  // INICIO BLOQUE PROYECTOS
+  .displayMediaQuery {
+    display: inline-block;
+  }
+  .bloqueDosTablet {
+    padding-bottom: 60px;
+  }
+  .anchoCarrouselTotal {
+    width: 100%;
+  }
+  .contenedorProyectos {
+    width: 100%;
+  }
+  .imagenBloqueProyectoTablet {
+    width: 265px;
+    height: 438px;
+    background: #abb5be;
+    border-radius: 10px;
+  }
+  .tituloProyectos {
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      @include text(40px, $mainColorBlue, 700);
+      line-height: 46.88px;
+    }
+  }
+  .margenBloqueProyectos {
+    margin-top: 60px;
+  }
+  .proyectosTablet {
+    width: 104px;
+    height: 16px;
+    margin-bottom: 30px;
+    .atacamaChile {
+      width: 200px;
+      @include text(14px, $mainColorBlue, 700);
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: $mainRoboto;
+    }
+  }
+
+  .descripcionProyectosTablet {
+    line-height: 35px;
+  }
+  #parrafoProyectoTablet {
+    @include text(16px, $colorTextos, 400);
+    font-family: $mainPoppins;
+    line-height: 24px;
+    letter-spacing: 00.02em;
+    span {
+      font-weight: 700;
+    }
+  }
+  .boxInferioresProyecto {
+    @include displayFlex(flex, row);
+    margin-top: 45px;
+    .boxInfUno {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 187px;
+      height: 33px;
+      background-color: rgba(61, 179, 179, 0.5);
+      border-radius: 40px;
+      p {
+        margin: 0px;
+        width: fit-content;
+        @include text(14px, white, 700);
+        font-family: $mainRoboto;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+      }
+    }
+    .boxInfDos {
+      margin-left: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 132px;
+      height: 33px;
+      background-color: rgba(61, 179, 179, 0.5);
+      border-radius: 40px;
+      p {
+        margin: 0px;
+        width: fit-content;
+        @include text(14px, white, 700);
+        font-family: $mainRoboto;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+  .displayOtrosProyeNone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+    h3 {
+      @include text(30px, $mainColorBlue, 700);
+      line-height: 35px;
+      font-family: $mainRoboto;
+    }
+  }
+  .maxWidthCard {
+    width: 336px;
+  }
+
+  .marginIndicator {
+    margin-top: 40px;
+  }
+  // FIN BLOQUE PROYECTOS
+
+  // INICIO BLOQUE "ACTIVA PARTICIPACION TABLET
+  .bloqueParticipacion {
+    h2 {
+      @include text(24px, white, 700);
+      line-height: 28px;
+    }
+  }
+  // FIN BLOQUE "ACTIVA PARTICIPACION TABLET
+  //  INICIO FOOTER TABLET
+  footer {
+    .logoArsen {
+      margin-top: 100px;
+      img {
+        width: 300px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+// CARDS CAMIIII TE QUIERPOOOO
+@media screen and (min-width: 1007px) {
+  .contenedorProyectos {
+    width: 1007px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  // NAVBAR
+  .margenMediaQuery {
+    margin-left: 250px;
+    margin-bottom: 3px;
+  }
+  .displayNoneItemsNav{
+    display: none;
+}
+.displayNoneItemsTab{
+  display: none;
+}
+.displayNoneItemsDesk{
+  display: block;
+}
+
+  .margenMediaQueryEle {
+    margin-right: 250px;
+  }
+
+  // INICIO HEAD 1 DESKTOP
+  .backgroundHeader {
+    background-color: $colorTitulos;
+    height: 549px;
+    @include displayFlex(flex, column);
+    justify-content: center;
+    align-items: flex-start;
+
+    h2 {
+      text-align: start;
+      margin-left: 250px;
+    }
+  }
+
+  .textos {
+    @include text(25px, white, 400);
+  }
+
+  .tituloHead {
+    @include text(60px, white, 700);
+    line-height: 70px;
+    margin-left: 250px;
+  }
+  .contendorBotones1 {
+    margin-left: 250px;
+  }
+
+  // HEAD ARRIBA DEL NAV DESKTOP
+  header {
+    justify-content: center;
+    align-items: center;
+    p {
+      @include text(12px, #1e1e1e, 400);
+      font-family: $mainPoppins;
+      line-height: 18px;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+
+  // BLOQUE UNO DESKTOP
+  .backgroundBloque1 {
+    p {
+      @include text(35px, white, 700);
+      line-height: 41px;
+      width: 90%;
+    }
+  }
+  // BLOQUE DOS DESKTOP
+
+  .bloqueDosTablet {
+    .imagenBloqueDosTablet {
+      width: 300px;
+      height: 438px;
+    }
+    .nosotrosTablet {
+      width: 101px;
+      height: 19px;
+      margin-bottom: 25px;
+
+      h2 {
+        @include text(14px, $mainColorBlue, 400);
+        line-height: 19px;
+      }
+    }
+
+    .descripcionTablet {
+      width: 624px;
+      margin-top: 20px;
+
+      h2 {
+        @include text(35px, #1e1e1e, 700);
+        line-height: 110.9%;
+      }
+      p {
+        width: 620px;
+        font-size: 16px;
+        margin-top: 27px;
+        text-align: justify;
+        line-height: 24px;
+      }
+    }
+
+    .viñetasTablet {
+      margin-top: 57px;
+
+      .iconoViñeta {
+        @include displayFlex(flex, row);
+        gap: 10px;
+      }
+    }
+  }
+
+  // BLOQUE TRES DESKTOP SERVICIOS
+  #displayNo {
+    display: none;
+  }
+
+  .backgroudnBloqueDeskServ {
+    margin-top: 78px;
+    background-color: $mainColorBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tituloServicios {
+      margin-top: 50px;
+      h2 {
+        @include text(40px, white, 700);
+        font-family: $mainRoboto;
+        line-height: 47px;
+        text-align: center;
+      }
+    }
+    .flexDesktopServicios {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    .imgServ {
+      margin-top: 54px;
+      width: 300px;
+      height: 485px;
+      .miniaturaServicios {
+        width: 284px;
+        height: 200px;
+      }
+      .assetPosicion {
+        margin-top: -55px;
+        img {
+          width: 89px;
+          height: 89px;
+        }
+      }
+    }
+    .descripcionServicios {
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        margin-top: 32px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        margin-top: 29px;
+      }
+    }
+    .parrafoWorker {
+      p {
+        width: 940px;
+        font-family: $mainPoppins;
+        line-height: 36px;
+      }
+    }
+  }
+
+  // Bloque proyectos Desktop
+
+  .anchoCarrouselTotal {
+    width: 1400px;
+  }
+  .bloqueProyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorProyectos {
+    width: 100%;
+  }
+
+  // bloque Activa Participacion
+  .bloqueParticipacion {
+    h2 {
+      @include text(35px, white, 700);
+      font-family: $mainRoboto;
+      line-height: 41px;
+      width: fit-content;
+    }
+  }
+  // BLOQUE FOOTER
+  .footer {
+    .boxDireccionFooter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      margin-top: 81px;
+      img {
+        width: 13.74px;
+        height: 17.44px;
+        margin-top: 1px
+      }
+      p{
+        @include text(12px, #1e1e1e, 400);
+        font-family: $mainPoppins;
+        line-height: 18px;
+      }
+    }
+
+    .boxHorarioFooter {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      justify-content: center;
+
+      p {
+        @include text(12px, #1e1e1e, 400);
+        font-family: $mainPoppins;
+        line-height: 18px;
+      }
+
+      img {
+        margin-top: 1.1px;
+        width: 13.74px;
+        height: 17.44px;
+      }
+    }
+
+    .buttomContactoFooter {
+      margin-top: 50px;
+    }
+
+    .copyrightArsen {
+      width: 100%;
+      height: 50px;
+      margin-top: 50px;
+      background-color: $colorSupeInf;
+      @include displayFlex(flex, column);
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        @include text(12px, $colorTextos, 700);
+        font-family: $mainPoppins;
+        letter-spacing: 0.225em;
+      }
+    }
+  }
+}

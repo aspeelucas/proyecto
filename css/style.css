@@ -1,0 +1,1026 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+nav {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  nav img {
+    width: 185px;
+    height: 74px;
+    padding-left: 14px;
+    align-items: center; }
+  nav #colorTextoNav {
+    font-size: 14px;
+    color: #2F2F2F;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif; }
+  nav .margenItemNav {
+    margin-top: 20px; }
+
+.displayNoneItemsNav {
+  display: block; }
+
+.displayNoneItemsTab {
+  display: none; }
+
+.displayNoneItemsDesk {
+  display: none; }
+
+.displayNoneItemsTabNos {
+  display: none; }
+
+.colorsito {
+  color: #4D7FF6; }
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #4D7FF6; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #4D7FF6;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; }
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block; }
+
+.hamburger-inner::before {
+  top: -10px; }
+
+.hamburger-inner::after {
+  bottom: -10px; }
+
+.hamburger--slider .hamburger-inner {
+  top: 2px; }
+
+.hamburger--slider .hamburger-inner::before {
+  top: 10px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s; }
+
+.hamburger--slider .hamburger-inner::after {
+  top: 20px; }
+
+.hamburger--slider.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(45deg); }
+
+.hamburger--slider.is-active .hamburger-inner::before {
+  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+  opacity: 0; }
+
+.hamburger--slider.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-90deg); }
+
+header {
+  display: none; }
+
+.backgroundHeader {
+  background-color: #2F2F2F;
+  height: 549px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .backgroundHeader h2 {
+    text-align: center; }
+
+.textos {
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 29px; }
+
+.tituloHead {
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 38px; }
+
+.backgroundBloque1 {
+  background-color: #4D7FF6;
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .backgroundBloque1 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    line-height: 23px;
+    width: 90%; }
+
+.bloqueDosTablet {
+  display: none; }
+
+.backgroudnBloque2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .backgroudnBloque2 h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #4D7FF6;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif; }
+
+.imagenNosotros {
+  background-color: #abb5be;
+  height: 265px;
+  width: 332px;
+  border-radius: 10px; }
+
+.descripcionUno {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%; }
+  .descripcionUno .colorTextoUno {
+    text-align: center;
+    font-size: 24px;
+    color: #2F2F2F;
+    font-weight: 700;
+    line-height: 110.9%; }
+  .descripcionUno .colorTextoDos {
+    color: #4D7FF6; }
+
+.descripcionDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .descripcionDos p {
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    color: #6A6A6A;
+    font-weight: 400; }
+
+#displayNo {
+  display: none; }
+
+.backgroudnBloqueDeskServ {
+  display: none; }
+
+.flexDesktopServicios {
+  display: flex;
+  flex-direction: column; }
+
+.backgroudnBloque3 {
+  background-color: #4D7FF6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px; }
+  .backgroudnBloque3 .tituloServicios {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 45px; }
+
+.miniaturaServicios {
+  width: 316px;
+  height: 158px;
+  background-color: #abb5be;
+  margin: 8px;
+  border-radius: 15px; }
+
+.imgServ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 331px;
+  height: 346px;
+  border-radius: 20px;
+  margin-bottom: 33px; }
+  .imgServ img {
+    width: 69.31px;
+    height: 69.31px; }
+
+.descripcionServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .descripcionServicios h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #4D7FF6;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif; }
+  .descripcionServicios p {
+    margin-top: 15px;
+    margin-left: 11px;
+    margin-right: 11px;
+    text-align: center;
+    font-size: 14px;
+    color: #6A6A6A;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 21px; }
+  .descripcionServicios .assetPosicion {
+    margin-top: -45px; }
+
+.imagenWorker {
+  margin-top: 70px; }
+  .imagenWorker img {
+    width: 138px; }
+
+.parrafoWorker {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center; }
+  .parrafoWorker p {
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    line-height: 36px; }
+
+.spanTextoWorker {
+  font-weight: 700; }
+
+.displayMediaQuery {
+  display: none; }
+
+.displayOtrosProyeNone {
+  display: none; }
+
+.bloqueProyectos {
+  display: flex;
+  flex-direction: column; }
+
+.tituloProyectos {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+  .tituloProyectos h2 {
+    font-size: 30px;
+    color: #4D7FF6;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif; }
+
+.tamanoImgCard {
+  background-color: #abb5be;
+  width: 100%;
+  height: 187px; }
+
+.maxWidthCard {
+  max-width: 400px;
+  align-items: center;
+  justify-content: center; }
+
+.contenedorProyectos {
+  margin-top: 34px;
+  width: 100%; }
+  .contenedorProyectos h5 {
+    font-size: 20px;
+    color: #4D7FF6;
+    font-weight: 700; }
+  .contenedorProyectos p {
+    font-size: 14px;
+    color: #6A6A6A;
+    font-weight: 400;
+    line-height: 21px; }
+
+.boxUbicacion {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 40px; }
+  .boxUbicacion img {
+    margin-left: 20px;
+    width: 15.03px;
+    height: 14.54px; }
+  .boxUbicacion p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-left: 12.6px;
+    text-align: center;
+    color: #4D7FF6; }
+
+.bloqueParticipacion {
+  background-color: #2F2F2F;
+  height: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 66px; }
+  .bloqueParticipacion h2 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    line-height: 23px;
+    width: fit-content; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .footer .boxDireHorario {
+    margin-top: 51px; }
+  .footer .logoArsen {
+    margin-top: 50px; }
+  .footer .boxDireccionFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px; }
+    .footer .boxDireccionFooter p {
+      margin-top: 17px;
+      font-size: 16px;
+      color: #1e1e1e;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif; }
+    .footer .boxDireccionFooter img {
+      width: 14.74px;
+      height: 17.44px; }
+  .footer .boxHorarioFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center; }
+    .footer .boxHorarioFooter p {
+      font-size: 16px;
+      color: #1e1e1e;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif; }
+    .footer .boxHorarioFooter img {
+      margin-top: 1.7px;
+      width: 14.74px;
+      height: 17.44px; }
+  .footer .buttomContactoFooter {
+    margin-top: 50px; }
+  .footer .copyrightArsen {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .footer .copyrightArsen h2 {
+      font-size: 12px;
+      color: #6A6A6A;
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 0.225em; }
+
+@media screen and (min-width: 768px) {
+  header {
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    gap: 52px; }
+    header img {
+      width: 14px;
+      height: auto;
+      margin-bottom: 17px;
+      margin-top: 16px; }
+    header p {
+      font-size: 12px;
+      color: #1e1e1e;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      line-height: 18px;
+      text-align: center;
+      margin-top: 16px; }
+    header .itemsHeaders {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      gap: 7px; }
+  .margenMediaQuery {
+    margin-left: 53px; }
+  .displayNoneItemsNav {
+    display: none; }
+  .displayNoneItemsTab {
+    display: block; }
+  .displayNoneItemsDesk {
+    display: none; }
+  .displayNoneItemsTabNos {
+    display: block; }
+  .margenMediaQueryEle {
+    margin-right: 71px;
+    margin-bottom: 25px; }
+  .tituloHead {
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    line-height: 70px; }
+  .backgroundBloque1 p {
+    width: 60%;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.6px; }
+  .displayNone {
+    display: none; }
+  .bloqueDosTablet {
+    margin-top: 82px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .bloqueDosTablet .imagenBloqueDosTablet {
+      width: 285px;
+      height: 438px;
+      background: #abb5be;
+      border-radius: 10px; }
+    .bloqueDosTablet .bloqueDosTextos {
+      margin-left: 20px; }
+    .bloqueDosTablet .nosotrosTablet {
+      width: 104px;
+      height: 16px; }
+      .bloqueDosTablet .nosotrosTablet h2 {
+        font-size: 16px;
+        color: #4D7FF6;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase; }
+    .bloqueDosTablet .descripcionTablet {
+      width: 427px;
+      margin-top: 20px; }
+      .bloqueDosTablet .descripcionTablet h2 {
+        font-size: 30px;
+        color: #1e1e1e;
+        font-weight: 700;
+        line-height: 33.27px;
+        font-family: "Roboto", sans-serif; }
+      .bloqueDosTablet .descripcionTablet .colorTextoDos {
+        color: #4D7FF6; }
+      .bloqueDosTablet .descripcionTablet p {
+        margin-top: 22px;
+        text-align: justify;
+        font-size: 16px;
+        color: #6A6A6A;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif; }
+    .bloqueDosTablet .viñetasTablet {
+      margin-top: 39px; }
+      .bloqueDosTablet .viñetasTablet .iconoViñeta {
+        display: flex;
+        flex-direction: row;
+        gap: 10px; }
+        .bloqueDosTablet .viñetasTablet .iconoViñeta img {
+          width: 20.83px;
+          height: 20.83px;
+          margin-top: 2.8px; }
+        .bloqueDosTablet .viñetasTablet .iconoViñeta p {
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          color: #1e1e1e;
+          font-weight: 400;
+          text-align: center;
+          line-height: 24px;
+          letter-spacing: 0.02em; }
+        .bloqueDosTablet .viñetasTablet .iconoViñeta .colorTurquesa {
+          color: #3DB3B3; }
+  #displayNo {
+    display: flex; }
+  .backgroudnBloqueDeskServ {
+    display: none; }
+  .displayNoneBloqueTres {
+    display: none; }
+  .backgroudnBloque3 {
+    margin-top: 50px; }
+    .backgroudnBloque3 .parrafoWorker p {
+      font-size: 24px; }
+    .backgroudnBloque3 .tituloServicios {
+      font-size: 40px;
+      color: white;
+      font-weight: 700;
+      line-height: 47px;
+      margin-bottom: 62px; }
+    .backgroudnBloque3 .miniaturaServicios {
+      width: 255px;
+      height: 175px;
+      margin: 8px; }
+    .backgroudnBloque3 .imgServ {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: white;
+      width: 692px;
+      height: 192px;
+      border-radius: 20px;
+      margin-bottom: 44px; }
+      .backgroudnBloque3 .imgServ img {
+        width: 60px;
+        height: auto; }
+    .backgroudnBloque3 .descripcionServicios {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .backgroudnBloque3 .descripcionServicios .tamañoDesarolloPlantas {
+        width: 356px;
+        margin-left: 21px; }
+      .backgroudnBloque3 .descripcionServicios h2 {
+        text-align: start;
+        font-size: 18px;
+        color: #4D7FF6;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        line-height: 21px;
+        letter-spacing: 0.02em; }
+      .backgroudnBloque3 .descripcionServicios p {
+        margin-top: 32px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 47px;
+        text-align: justify;
+        font-size: 16px;
+        color: #6A6A6A;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em; }
+      .backgroudnBloque3 .descripcionServicios .assetPosicion {
+        left: 103px;
+        bottom: 68px;
+        position: absolute;
+        margin-top: 0px; }
+  .displayMediaQuery {
+    display: inline-block; }
+  .bloqueDosTablet {
+    padding-bottom: 60px; }
+  .anchoCarrouselTotal {
+    width: 100%; }
+  .contenedorProyectos {
+    width: 100%; }
+  .imagenBloqueProyectoTablet {
+    width: 265px;
+    height: 438px;
+    background: #abb5be;
+    border-radius: 10px; }
+  .tituloProyectos {
+    margin-top: 43px;
+    display: flex;
+    justify-content: center; }
+    .tituloProyectos h2 {
+      font-size: 40px;
+      color: #4D7FF6;
+      font-weight: 700;
+      line-height: 46.88px; }
+  .margenBloqueProyectos {
+    margin-top: 60px; }
+  .proyectosTablet {
+    width: 104px;
+    height: 16px;
+    margin-bottom: 30px; }
+    .proyectosTablet .atacamaChile {
+      width: 200px;
+      font-size: 14px;
+      color: #4D7FF6;
+      font-weight: 700;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif; }
+  .descripcionProyectosTablet {
+    line-height: 35px; }
+  #parrafoProyectoTablet {
+    font-size: 16px;
+    color: #6A6A6A;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 24px;
+    letter-spacing: 00.02em; }
+    #parrafoProyectoTablet span {
+      font-weight: 700; }
+  .boxInferioresProyecto {
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px; }
+    .boxInferioresProyecto .boxInfUno {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 187px;
+      height: 33px;
+      background-color: rgba(61, 179, 179, 0.5);
+      border-radius: 40px; }
+      .boxInferioresProyecto .boxInfUno p {
+        margin: 0px;
+        width: fit-content;
+        font-size: 14px;
+        color: white;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        line-height: 16px;
+        letter-spacing: 0.02em; }
+    .boxInferioresProyecto .boxInfDos {
+      margin-left: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 132px;
+      height: 33px;
+      background-color: rgba(61, 179, 179, 0.5);
+      border-radius: 40px; }
+      .boxInferioresProyecto .boxInfDos p {
+        margin: 0px;
+        width: fit-content;
+        font-size: 14px;
+        color: white;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        line-height: 16px;
+        letter-spacing: 0.02em; }
+  .displayOtrosProyeNone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px; }
+    .displayOtrosProyeNone h3 {
+      font-size: 30px;
+      color: #4D7FF6;
+      font-weight: 700;
+      line-height: 35px;
+      font-family: "Roboto", sans-serif; }
+  .maxWidthCard {
+    width: 336px; }
+  .marginIndicator {
+    margin-top: 40px; }
+  .bloqueParticipacion h2 {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    line-height: 28px; }
+  footer .logoArsen {
+    margin-top: 100px; }
+    footer .logoArsen img {
+      width: 300px;
+      margin-top: 50px; } }
+
+@media screen and (min-width: 1007px) {
+  .contenedorProyectos {
+    width: 1007px; } }
+
+@media screen and (min-width: 1400px) {
+  .margenMediaQuery {
+    margin-left: 250px;
+    margin-bottom: 3px; }
+  .displayNoneItemsNav {
+    display: none; }
+  .displayNoneItemsTab {
+    display: none; }
+  .displayNoneItemsDesk {
+    display: block; }
+  .margenMediaQueryEle {
+    margin-right: 250px; }
+  .backgroundHeader {
+    background-color: #2F2F2F;
+    height: 549px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .backgroundHeader h2 {
+      text-align: start;
+      margin-left: 250px; }
+  .textos {
+    font-size: 25px;
+    color: white;
+    font-weight: 400; }
+  .tituloHead {
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    line-height: 70px;
+    margin-left: 250px; }
+  .contendorBotones1 {
+    margin-left: 250px; }
+  header {
+    justify-content: center;
+    align-items: center; }
+    header p {
+      font-size: 12px;
+      color: #1e1e1e;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      line-height: 18px;
+      text-align: center;
+      margin-top: 16px; }
+  .backgroundBloque1 p {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    line-height: 41px;
+    width: 90%; }
+  .bloqueDosTablet .imagenBloqueDosTablet {
+    width: 300px;
+    height: 438px; }
+  .bloqueDosTablet .nosotrosTablet {
+    width: 101px;
+    height: 19px;
+    margin-bottom: 25px; }
+    .bloqueDosTablet .nosotrosTablet h2 {
+      font-size: 14px;
+      color: #4D7FF6;
+      font-weight: 400;
+      line-height: 19px; }
+  .bloqueDosTablet .descripcionTablet {
+    width: 624px;
+    margin-top: 20px; }
+    .bloqueDosTablet .descripcionTablet h2 {
+      font-size: 35px;
+      color: #1e1e1e;
+      font-weight: 700;
+      line-height: 110.9%; }
+    .bloqueDosTablet .descripcionTablet p {
+      width: 620px;
+      font-size: 16px;
+      margin-top: 27px;
+      text-align: justify;
+      line-height: 24px; }
+  .bloqueDosTablet .viñetasTablet {
+    margin-top: 57px; }
+    .bloqueDosTablet .viñetasTablet .iconoViñeta {
+      display: flex;
+      flex-direction: row;
+      gap: 10px; }
+  #displayNo {
+    display: none; }
+  .backgroudnBloqueDeskServ {
+    margin-top: 78px;
+    background-color: #4D7FF6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .backgroudnBloqueDeskServ .tituloServicios {
+      margin-top: 50px; }
+      .backgroudnBloqueDeskServ .tituloServicios h2 {
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        line-height: 47px;
+        text-align: center; }
+    .backgroudnBloqueDeskServ .flexDesktopServicios {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; }
+    .backgroudnBloqueDeskServ .imgServ {
+      margin-top: 54px;
+      width: 300px;
+      height: 485px; }
+      .backgroudnBloqueDeskServ .imgServ .miniaturaServicios {
+        width: 284px;
+        height: 200px; }
+      .backgroudnBloqueDeskServ .imgServ .assetPosicion {
+        margin-top: -55px; }
+        .backgroudnBloqueDeskServ .imgServ .assetPosicion img {
+          width: 89px;
+          height: 89px; }
+    .backgroudnBloqueDeskServ .descripcionServicios h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21px;
+      letter-spacing: 0.02em;
+      margin-top: 32px; }
+    .backgroudnBloqueDeskServ .descripcionServicios p {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      margin-top: 29px; }
+    .backgroudnBloqueDeskServ .parrafoWorker p {
+      width: 940px;
+      font-family: "Poppins", sans-serif;
+      line-height: 36px; }
+  .anchoCarrouselTotal {
+    width: 1400px; }
+  .bloqueProyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contenedorProyectos {
+    width: 100%; }
+  .bloqueParticipacion h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    line-height: 41px;
+    width: fit-content; }
+  .footer .boxDireccionFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 81px; }
+    .footer .boxDireccionFooter img {
+      width: 13.74px;
+      height: 17.44px;
+      margin-top: 1px; }
+    .footer .boxDireccionFooter p {
+      font-size: 12px;
+      color: #1e1e1e;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      line-height: 18px; }
+  .footer .boxHorarioFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center; }
+    .footer .boxHorarioFooter p {
+      font-size: 12px;
+      color: #1e1e1e;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      line-height: 18px; }
+    .footer .boxHorarioFooter img {
+      margin-top: 1.1px;
+      width: 13.74px;
+      height: 17.44px; }
+  .footer .buttomContactoFooter {
+    margin-top: 50px; }
+  .footer .copyrightArsen {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .footer .copyrightArsen h2 {
+      font-size: 12px;
+      color: #6A6A6A;
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 0.225em; } }
+
+.contendorBotones1 {
+  width: 266px;
+  height: 66px;
+  margin-top: 23px; }
+  .contendorBotones1 .botonn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 66px;
+    background-color: #4D7FF6;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    line-height: 23px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden; }
+
+.botonn span {
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all; }
+
+.botonn:hover {
+  color: #4D7FF6; }
+
+.botonn.uno::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background-color: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transition: .3s ease-in-out all;
+  border-radius: 100px;
+  transform-origin: center; }
+
+.botonn.uno:hover::after {
+  transform: scale(400);
+  background-color: white; }
+
+.contendorBotones2 {
+  width: 266px;
+  height: 66px;
+  margin-top: 50px; }
+  .contendorBotones2 .botonnDos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 66px;
+    background-color: #4D7FF6;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    line-height: 23px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden; }
+
+.botonnDos span {
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all; }
+
+.botonnDos.dos::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background-color: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transition: .3s ease-in-out all;
+  border-radius: 100px;
+  transform-origin: center; }
+
+.botonnDos.dos:hover::after {
+  transform: scale(400);
+  background-color: #2F2F2F; }

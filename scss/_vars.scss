@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+// colores
+
+
+$mainColorBlue :#4D7FF6;
+$secondaryGreen :#3DB3B3;
+$colorTitulos : #2F2F2F;
+$colorSupeInf : #D9D9D9;
+$colorTextos:#6A6A6A;
+
+// fin colores 
+
+// fonts
+$mainRoboto : 'Roboto', sans-serif;
+$mainPoppins : 'Poppins', sans-serif;
+
+// seteo general css
+
+* {
+
+    margin: 0px;
+    
+    padding: 0px;
+    
+    box-sizing: border-box;
+    
+    }
+
+    //MIXINS
+
+  @mixin displayFlex ($flex, $direccion) {
+      display:$flex;
+      flex-direction:$direccion ;
+  }  
+   
+  @mixin text ($size, $color,$font-weight){
+      font-size: $size;
+      color: $color;
+      font-weight: $font-weight;
+  };
+
